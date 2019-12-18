@@ -1,6 +1,29 @@
 body {
-  background: url('https://sun9-51.userapi.com/c856524/v856524100/89505/AyoCzsJ_kmA.jpg') center top /100%;
-  background-size: 40%;
+  background: url('https://sun9-51.userapi.com/c856524/v856524100/89505/AyoCzsJ_kmA.jpg') center top 100%;
+}
+
+.hello{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30px;
+  background-image: url(https://sun9-55.userapi.com/c856524/v856524100/89573/xucICBHHIVo.jpg);
+  background-size: contain;
+}
+
+.score{
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-size: 20px;
+  background-image: url(https://sun9-49.userapi.com/c856524/v856524100/8956a/2xrm4IGB2mU.jpg);
+  background-size: contain;
+}
+.record {
+  font-size: 20px;
+}
+.total {
+  font-size: 90px;
 }
 
 .plate {
@@ -8,9 +31,16 @@ body {
   left: 50%;
   bottom: 50%;
 }
+.text{
+  color: brown;
+  background-color: crimson;
+}
+.score{
+  color: olivedrab;
+}
 
 .plate:before {
-  content: url(https://sun9-34.userapi.com/c856032/v856032341/18d51d/NyVvbm_kNoA.jpg);
+  content: url(./persbl/5y4yrJ9FQJ4.png);
   display: block;
   width: 50px;
   height: 50px;
@@ -27,7 +57,7 @@ body {
 /* Первая тарелка */
 
 .plate-1 {
-  animation: move-plate-1 15s ease 3 forwards;
+  animation: move-plate-1 15s ease 13 forwards;
 }
 
 @keyframes move-plate-1 {
@@ -36,11 +66,18 @@ body {
     bottom: -12%;
     transform: translate(-50%, -50%) rotateX(45deg)
   }
-
+  10%{
+    transform: translate(-50%, -50%) rotateX(453deg) rotateY(65deg)
+  }
+  30%{
+    transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg)
+  }
   50% {
     bottom: 60%
   }
-
+  70% {
+    transform: translate(-50%, -50%) rotateX(445deg) rotateY(475deg)
+  }
   100% {
     left: 0%;
     bottom: 50%;
@@ -50,16 +87,16 @@ body {
 
 /* Вторая тарелка */
 .plate-2 {
-  animation: move-plate-2 12s ease 3 forwards;
+  animation: move-plate-2 12s ease 13 forwards;
 }
 
 .plate-2:before {
-  content: url(https://sun9-55.userapi.com/c856524/v856524100/8950d/KwrsgtB9x6c.jpg);
+  content: url(./persbl/ddnF5kJfu0g.png);
 }
 
 @keyframes move-plate-2 {
   0% {
-    left: -10%;
+    left: 90%;
     bottom: 15%;
     transform: translate(-50%, -50%) rotateX(45deg)
   }
@@ -69,7 +106,7 @@ body {
   }
 
   100% {
-    left: 0%;
+    left: 70%;
     bottom: 50%;
     transform: translate(-50%, -50%) rotateX(45deg) scale(0);
   }
@@ -78,11 +115,11 @@ body {
 /*  Третья тарелка  */
 
 .plate-3 {
-  animation: move-plate-3 10s ease 3 forwards;
+  animation: move-plate-3 10s ease 13 forwards;
 }
 
 .plate-3:before {
-  content: url(https://sun9-67.userapi.com/c856524/v856524100/8952e/TKhZtPM9_Mg.jpg);
+  content: url(./persbl/gdSrNYUqD7Q.png);
 }
 
 @keyframes move-plate-3 {
@@ -91,9 +128,22 @@ body {
     bottom: 15%;
     transform: translate(-50%, -50%) rotateX(45deg)
   }
+  15% {
+    left: 80%;
+    bottom: 50%;
+  }
 
+  30% {
+    left: 2%;
+    bottom: 0;
+  }
   50% {
-    bottom: 60%
+    bottom: 60%;
+    left: 93%;
+  }
+  70% {
+    bottom: 20%;
+    left: 52%;
   }
 
   100% {
@@ -105,16 +155,16 @@ body {
 
 /* Четвёртая тарелка */
 .plate-4 {
-  animation: move-plate-4 6s ease 3 forwards;
+  animation: move-plate-4 6s ease 13 forwards;
 }
 
 .plate-4:before {
-  content: url(https://sun9-11.userapi.com/c856524/v856524100/8951d/rW3GFMDqt2w.jpg);
+  content: url(./persbl/KwrsgtB9x6c.png);
 }
 
 @keyframes move-plate-4 {
   0% {
-    left: 0%;
+    left: 70%;
     bottom: 55%;
     transform: translate(-50%, -50%) rotateX(5deg)
   }
@@ -133,17 +183,19 @@ body {
 /* Пятая тарелка */
 
 .plate-5 {
-  animation: move-plate-5 8s ease 3 forwards;
+  animation: move-plate-5 8s ease 13 forwards;
 }
 
 .plate-5:before {
-  content: url(https://sun9-37.userapi.com/c856524/v856524100/89514/5y4yrJ9FQJ4.jpg);
+  content: url(./persbl/N9utpS1c0PU.png);
+  position: absolute;
+
 }
 
 @keyframes move-plate-5 {
   0% {
     left: 30%;
-    bottom: 15%;
+    bottom: 100%;
     transform: translate(-50%, -50%) rotateX(5deg)
   }
 
@@ -154,6 +206,89 @@ body {
   100% {
     left: 30%;
     bottom: 50%;
+    transform: translate(-50%, -50%) rotateX(435deg) scale(0);
+  }
+}
+
+/* Шестая тарелка */
+
+.plate-6 {
+  animation: move-plate-6 8s ease 13 forwards;
+}
+
+.plate-6:before {
+  content: url(./persbl/rW3GFMDqt2w.png);
+  position: absolute;
+
+}
+
+@keyframes move-plate-6 {
+  0% {
+    left: 0%;
+    bottom: 15%;
+    transform: translate(-50%, -50%) rotateX(5deg)
+  }
+  10% {
+    left: 10%;
+    bottom: 70%;
+    transform: translate(-50%, -50%) rotateX(435deg) scale(0);
+  }
+
+  50% {
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(5deg)
+  }
+  70% {
+    bottom: 90%;
+    left: 70%;
+    transform: translate(-50%, -50%) rotateX(435deg) scale(0);
+  }
+
+  100% {
+    left: 100%;
+    bottom: -50%;
+    transform: translate(-50%, -50%) rotateX(45deg) scale(0);
+  }
+}
+
+/* Седьмая */
+
+.plate-7 {
+  animation: move-plate-7 8s ease 13 forwards;
+}
+
+.plate-7:before {
+  content: url(./persbl/TKhZtPM9_Mg.png);
+  position: absolute;
+  transform: rotate(360%);
+
+}
+@keyframes move-plate-7 {
+  0% {
+    left: 11%;
+    bottom: 13%;
+    transform: translate(-50%, -50%) rotateX(5deg)
+  }
+
+  10% {
+    left: 10%;
+    bottom: 73%;
+  }
+
+  50% {
+    bottom: 10%;
+    left: 30%;
+  }
+
+  70% {
+    bottom: 50%;
+    left: 30%;
+  }
+
+  100% {
+    left: 100%;
+    bottom: -50%;
     transform: translate(-50%, -50%) rotateX(45deg) scale(0);
   }
 }
@@ -166,9 +301,10 @@ body {
 .record:after {
   color: white;
   content: counter(list);
-  font-size: 24px;
+  font-size: 172px;
 }
 
 * {
   color: white;
+  font-family: sans-serif;
 }
