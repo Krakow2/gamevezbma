@@ -10,7 +10,10 @@ body {
   background-image: url(https://sun9-55.userapi.com/c856524/v856524100/89573/xucICBHHIVo.jpg);
   background-size: contain;
 }
-
+audio{
+  position: absolute;
+  z-index: -2;
+}
 .score{
   position: absolute;
   top: 2%;
